@@ -1633,6 +1633,7 @@ public class Menu extends JFrame{
 	}
 	
 	public static boolean isNumeric(String str)  // a method that tests if a string is numeric
+	// a method that tests if a string is numeric
 	{  
 	  try  
 	  {  
