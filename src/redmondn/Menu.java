@@ -136,11 +136,16 @@ public class Menu extends JFrame{
 						
 					
 						
-						
+						// Inline Method / Inline Function 
 						
 						
 						add.addActionListener(new ActionListener() {
 							public void actionPerformed(ActionEvent e) {
+								
+						//		return (password.length() > 7) ?2:1;
+								return;
+														
+								/*
 								f1.dispose();
 								
 								boolean loop = true;
@@ -155,19 +160,7 @@ public class Menu extends JFrame{
 								 {
 									 loop = false;
 								 }
-								}
-								
-								
-								
-								
-							    ArrayList<CustomerAccount> accounts = new ArrayList<CustomerAccount> ();
-										Customer customer = new Customer(PPS, surname, firstName, DOB, CustomerID, password, accounts);
-											
-										customerList.add(customer);
-									
-										JOptionPane.showMessageDialog(f, "CustomerID = " + CustomerID +"\n Password = " + password  ,"Customer created.",  JOptionPane.INFORMATION_MESSAGE);
-										menuStart();
-									f.dispose();
+								} */
 							}
 						});	
 								}
