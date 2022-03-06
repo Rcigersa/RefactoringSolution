@@ -792,7 +792,17 @@ public class Menu extends JFrame{
 				customerIDTextField.setText(customer.getCustomerID());
 				passwordTextField.setText(customer.getPassword());	
 				
-				//JLabel label1 = new JLabel("Edit customer details below. The save");
+				// Encapsulate Variable / Self-Encapsulate Field / Encapsulate Field 
+				
+				public defaultOwner() {
+					return defaultOwnerData;
+				}
+				
+				public void setDefaultOwner(arg) {
+					defaultOwnerData = arg;
+				}
+				
+				JLabel label1 = new JLabel("Edit customer details below. The save");
 				
 			
 				JButton saveButton = new JButton("Save");
@@ -800,7 +810,7 @@ public class Menu extends JFrame{
 				
 				cancelPanel.add(cancelButton, BorderLayout.SOUTH);
 				cancelPanel.add(saveButton, BorderLayout.SOUTH);
-			//	content.removeAll();
+				content.removeAll();
 				Container content = f.getContentPane();
 				content.setLayout(new GridLayout(2, 1));
 				content.add(textPanel, BorderLayout.NORTH);
@@ -991,9 +1001,10 @@ public class Menu extends JFrame{
 						pPSTextField.setText(customerList.get(0).getPPS());
 						dOBTextField.setText(customerList.get(0).getDOB());
 						customerIDTextField.setText(customerList.get(0).getCustomerID());
-						passwordTextField.setText(customerList.get(0).getPassword());				
-							}		
-					     });
+						passwordTextField.setText(customerList.get(0).getPassword());	
+					}		
+					   
+				});	
 				
 				previous.addActionListener(new ActionListener(  ) {
 					public void actionPerformed(ActionEvent ae) {
