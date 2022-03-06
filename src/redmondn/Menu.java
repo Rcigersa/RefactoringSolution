@@ -19,6 +19,7 @@ import java.util.Date;
 
 public class Menu extends JFrame{
 	
+	protected static final Calendar IOE = null;
 	private ArrayList<Customer> customerList = new ArrayList<Customer>();
     private int position = 0;
 	private String password;
@@ -36,6 +37,7 @@ public class Menu extends JFrame{
 	 JPanel panel2;
 		JButton add;
 		String 	PPS,firstName,surname,DOB,CustomerID;
+		protected static javax.swing.JLabel label_IOE;
 	
 	public static void main(String[] args)
 	{
@@ -1648,6 +1650,30 @@ public class Menu extends JFrame{
 	    return false;  
 	  }  
 	  return true;  
+	}
+	
+	// Refactoring .addActionListener
+	
+	public static JRadioButton create(String password, final int x, final double y) {
+	    JRadioButton button = JLabel(password);
+	    button.addActionListener(new ActionListener() {
+	         public void actionPerformed(ActionEvent e) {
+	            IOE.set(x, (int) y);
+	            StringBuilder text = new StringBuilder("IOE:");
+	            for (int i = 0; i < 22; i++)
+	                text.append(IOE.get(i));
+	            try {
+					label_IOE.setText(text + "% ");
+				} catch (Exception e1) {
+					e1.printStackTrace();
+				}
+	        }
+	    });
+	    return button;
+	}
+
+	private static JRadioButton JLabel(String password2) {
+		return null;
 	}
 }
 
