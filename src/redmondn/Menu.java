@@ -1600,7 +1600,7 @@ public class Menu extends JFrame{
 				String euro = "\u20ac";
 				 acc.setBalance(acc.getBalance()-withdraw);
 				   //recording transaction:
-			//		String date = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
+					//String date = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
 				 Date date = new Date();
 				 String date2 = date.toString();
 				 
@@ -1633,7 +1633,7 @@ public class Menu extends JFrame{
 	}
 	
 	public static boolean isNumeric(String str)  // a method that tests if a string is numeric
-	// a method that tests if a string is numeric
+	
 	{  
 	  try  
 	  {  
